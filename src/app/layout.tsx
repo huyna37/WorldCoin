@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
@@ -9,6 +11,7 @@ export const metadata: Metadata = {
 
 const NavBar = dynamic(() => import('./components/layouts/Navbar'), { ssr: true });
 const Footer = dynamic(() => import('./components/layouts/Footer'), { ssr: true });
+const Head = dynamic(() => import('./components/layouts/Header'), { ssr: true });
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <Head/>
         <NavBar />
         {children}
         <Footer />

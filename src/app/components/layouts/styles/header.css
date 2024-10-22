@@ -1,0 +1,11 @@
+.header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    width: 335px;
+    height: 90px;
+  }
+  
+  .imageContainer {
+    max-width: 30%;
+  }
