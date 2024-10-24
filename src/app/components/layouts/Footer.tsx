@@ -20,7 +20,7 @@ export default async function Home() {
                                 <div className="nameFooter">Tools</div>
                                 <li className="dropdown-item">
                                     <a>English
-                                </a></li>
+                                    </a></li>
                                 <li><a>Year to year</a></li>
                                 <li><a>Widgets</a></li>
                                 <li><a>API</a></li>
@@ -39,26 +39,32 @@ export default async function Home() {
                         <div className="col-6 col-md-3">
                             <ul>
                                 <div className="nameFooter">Follow us</div>
-                                <li><a>Facebook</a></li>
-                                <li><a>Installgram</a></li>
+                                <div className="social-buttons">
+                                    <a href="https://facebook.com" target="_blank" className="facebook">
+                                         Facebook
+                                    </a>
+                                    <a href="https://twitter.com" target="_blank" className="twitter">
+                                         Twitter
+                                    </a>
+                                </div>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="custom-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col text-center footerCoin">
-                            <a>© 2024 WorldCoinIndex</a> |
-                            <a href="#">Disclaimer</a> |
-                            <a href="#">Privacy policy</a> |
-                            <a href="#">Terms of use</a>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center footerCoin">
+                                <a>© 2024 WorldCoinIndex</a> |
+                                <a href="#">Disclaimer</a> |
+                                <a href="#">Privacy policy</a> |
+                                <a href="#">Terms of use</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            
+
         </>
     );
 }

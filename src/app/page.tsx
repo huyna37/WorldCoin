@@ -23,6 +23,60 @@ export default function Home() {
       updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
       image: '/images/news.png',
     },
+    {
+      title: 'Bums Lottery Daily Combo 21 October 2024',
+      text: 'Get 15000 stars with Starsfi Daily Combo 21 October 2024',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Hamster Kombat Mini Game Puzzle Solution',
+      text: 'Earn 250BP BLUM points reward by finishing the daily video tasks of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Tapswap Daily Task Cinema Codes 21 October 2024',
+      text: 'Claim 150 HRUM reward by Solving the Quote of the Day of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Bums Lottery Daily Combo 21 October 2024',
+      text: 'Get 15000 stars with Starsfi Daily Combo 21 October 2024',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Hamster Kombat Mini Game Puzzle Solution',
+      text: 'Earn 250BP BLUM points reward by finishing the daily video tasks of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Tapswap Daily Task Cinema Codes 21 October 2024',
+      text: 'Claim 150 HRUM reward by Solving the Quote of the Day of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Bums Lottery Daily Combo 21 October 2024',
+      text: 'Get 15000 stars with Starsfi Daily Combo 21 October 2024',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Hamster Kombat Mini Game Puzzle Solution',
+      text: 'Earn 250BP BLUM points reward by finishing the daily video tasks of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
+    {
+      title: 'Tapswap Daily Task Cinema Codes 21 October 2024',
+      text: 'Claim 150 HRUM reward by Solving the Quote of the Day of 21 October 2024.',
+      updated: '21. Oct 2024 - by Adeoye O. on Daily Combo',
+      image: '/images/news.png',
+    },
   ];
   const itemsPerPage = 30;
   const [currentPage, setCurrentPage] = useState(1);
@@ -33,8 +87,9 @@ export default function Home() {
   );
 
   return (
-    <div className="container mt-4 groupContent">
-      <div className="row">
+    <div className="container mt-4">
+      <div className="row groupContent">
+        <div className="groupDaily">
         {currentContents.map((content, index) => (
           <div className="col-md-12 mb-3" key={index}>
             <div className="card cotentTitle">
@@ -85,8 +140,8 @@ export default function Home() {
             Next
           </button>
         </div>
-      </div>
-      <div className="recent-daily-combo mt-5 listContent">
+        </div>
+        <div className="recent-daily-combo mt-5 listContent">
         <h2 className="text-center">Recent Daily Combo</h2>
         <ul>
           <li>CEX Daily Combo 21 October 2024</li>
@@ -96,8 +151,27 @@ export default function Home() {
           <li>Grand Combat Daily Combo 21 October 2024</li>
           <li>City Holder Daily Combo 21 October 2024</li>
           <li>Spell Wallet Daily Puzzle Combo 21 October 2024</li>
+          <li>Oxygen Miner Daily Combo 23 October 2024</li>
+          <li>Oxygen Miner Daily Combo 23 October 2024</li>
+          <li>Vertus Daily Combo 23 October 2024</li>
+        </ul>
+
+        <h2 className="text-center">Recent Daily Combo</h2>
+        <ul>
+          <li>CEX Daily Combo 21 October 2024</li>
+          <li>Cat Gold Miner Daily Treasure Combo 21 October 2024</li>
+          <li>Captain Tsubasa Daily Combo 21 October 2024</li>
+          <li>HashCats Daily Combo & Cipher Staking 21 October 2024</li>
+          <li>Grand Combat Daily Combo 21 October 2024</li>
+          <li>City Holder Daily Combo 21 October 2024</li>
+          <li>Spell Wallet Daily Puzzle Combo 21 October 2024</li>
+          <li>Oxygen Miner Daily Combo 23 October 2024</li>
+          <li>Oxygen Miner Daily Combo 23 October 2024</li>
+          <li>Vertus Daily Combo 23 October 2024</li>
         </ul>
       </div>
+      </div>
+     
     </div>
   );
 }

@@ -84,3 +84,17 @@
 .groupContent{
   display: flex;
 }
+
+.groupContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupDaily {
+  flex-basis: 65%;
+  padding-right: 10px; 
+}
+
+.listContent {
+  flex-basis: 35%;
+}

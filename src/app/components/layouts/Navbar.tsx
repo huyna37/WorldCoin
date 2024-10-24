@@ -3,11 +3,15 @@
 import React, { useState } from 'react';
 import './styles/navbar.css';
 
-export default async function Home() {
+export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [activeIndex, setActiveIndex] = useState(5); 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (index: any) => {
+    setActiveIndex(index);
   };
 
   return (
@@ -16,56 +20,17 @@ export default async function Home() {
         <div className="container">
           <div className="collapse navbar-collapse tabMenu" id="navbarNav">
             <ul className="navbar-nav me-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Stats
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Markets
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Exchanges
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  News
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  Daily Combo
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Resources
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Watchlist
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Rewards
-                </a>
-              </li>
+              {['Home', 'Stats', 'Markets', 'Exchanges', 'News', 'Daily Combo', 'Resources', 'Watchlist', 'Portfolio', 'Rewards'].map((item, index) => (
+                <li className="nav-item" key={index}>
+                  <a
+                    className={`nav-link ${activeIndex === index ? 'active' : ''}`} 
+                    href="#"
+                    onClick={() => handleItemClick(index)}
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
             <div className="d-flex align-items-center">
               <div className="dropdown me-3">
